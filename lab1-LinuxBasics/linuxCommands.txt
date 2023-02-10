@@ -1,0 +1,58 @@
+ls
+- List files and dirs
+ls -lh
+- List files and dirs with more info
+man commandName
+- Get info on the command
+pwd
+- Get / print path to working directory
+cd dirName
+- Move into specified directory
+- cd .. —> move one dir backwards/upwards
+- cd —> move into home directory
+- cd - —> move into last directory
+mkdir dirName
+- Make new directory
+vim fileName
+- Creates new file (if it doesn’t exist)
+- Opens the new/found file up in a vim text editor
+- i - insert/edit mode
+- esc (escape key) - command mode
+- In command mode:
+    - :q - quit
+    - :w - save
+    - :wq - save and quit
+mv fileName destinationName/newFileName
+- Move file to a different directory
+- New file name is optional but will rename the file when it’s moved
+- To move backwards - destination name should be ../ or the full path for the directory
+- Rename file (mv currentFileName newFileName)
+- Move a directory to another directory (mv -f dirName destinationName)
+cp fileName destinationName/newFileName
+- Copy the file into a different directory
+- New file name is optional but will change the name of the copy
+- Copies are separate - changing one will not affect the other
+cat fileName
+- Prints everything from the file into the terminal
+rm fileName
+- Delete a file
+- Delete a directory and everything within it (rm -rf dirName)
+grep “searchString” fileName
+- Search for a specific string
+- Find all instances of the string and print it out
+clear
+- Clear terminal
+top
+- Lists all the programs and commands running at the moment with info on cpu, ram, time, etc
+ps
+- Lists commands running at the moment
+df
+- Lists file systems and shows how much memory they use
+du
+- Lists directories in the current directory and how much memory they use
+- Shows how much memory the files in the current directory use
+command1 | command2
+- Combine two commands by using the output of command 1 as input in command 2
+- Ex. ps -ef | grep “tmish” —> get all the commands running at the moment and then only display the ones with “tmish” in them (the ones running on my username)
+control + c
+- Stops command
